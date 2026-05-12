@@ -1,0 +1,68 @@
+name: Custom order inquiry
+description: Start a CounterCue Signs custom order inquiry.
+title: "Custom order inquiry: "
+labels: ["order-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in CounterCue Signs. Do not include private addresses, payment card data, bank details, passwords, or tax IDs in this public inquiry.
+  - type: input
+    id: business_name
+    attributes:
+      label: Business or booth name
+      description: Public-facing business, booth, creator, or vendor name.
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City or market area
+      description: Example: Chino, Chino Hills, Ontario, Pomona, Upland, Rancho Cucamonga.
+    validations:
+      required: true
+  - type: input
+    id: qr_destination
+    attributes:
+      label: QR destination URL
+      description: The menu, review, booking, tip, payment, social, or website URL you want the QR to point to.
+    validations:
+      required: true
+  - type: input
+    id: display_text
+    attributes:
+      label: Short display text
+      description: Example: Menu, Reviews, Tips, Book Now, Follow, Scan to Pay.
+    validations:
+      required: true
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product interest
+      options:
+        - Custom QR counter display - $34.95
+        - QR card/menu holder - $19.95
+        - Name sign with QR slot - $29.95
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: colors
+    attributes:
+      label: Preferred colors
+      description: Example: black and white, pink with black text, blue and white.
+  - type: dropdown
+    id: fulfillment
+    attributes:
+      label: Fulfillment preference
+      options:
+        - Chino/Inland Empire local pickup
+        - Shipping if practical
+        - Either
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add timing needs, booth/counter use case, or other public-safe details. Do not include private addresses or payment details.

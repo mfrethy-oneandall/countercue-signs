@@ -24,8 +24,12 @@
     ul, ol { padding-left:20px; }
     li { margin:8px 0; }
     .notice { border-color:#e4c27c; background:#fff8e8; }
+    .proof-gallery { margin-top:14px; display:grid; grid-template-columns:2fr 1fr; gap:14px; }
+    .proof-card { background:white; border:1px solid var(--line); border-radius:8px; padding:12px; }
+    .proof-card img { width:100%; display:block; border-radius:8px; border:1px solid var(--line); background:white; }
+    .proof-card p { margin:8px 0 0; color:var(--muted); font-size:.95rem; }
     footer { color:var(--muted); font-size:.9rem; }
-    @media (max-width:760px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width:760px) { .grid, .proof-gallery { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -60,7 +64,18 @@
 
     <section class="panel notice" style="margin-top:14px;">
       <h2>First production run</h2>
-      <p>CounterCue Signs is taking custom order inquiries while the v3 physical proof pass is completed. Preview proof exists; physical product photos, packed dimensions, and scan proof will be added after the proof pass. No item is claimed in stock, guaranteed scan-tested, or ready to ship today.</p>
+      <p>CounterCue Signs is taking custom order inquiries with the first v3 proof print complete and shown below. QR scan proof, packed dimensions, and order-specific production proof are still being captured. No item is claimed in stock, guaranteed scan-tested, or ready to ship today.</p>
+    </section>
+
+    <section class="proof-gallery" aria-label="actual v3 proof photos">
+      <article class="proof-card">
+        <img src="assets/v3/v3-front-proof.jpg" alt="Actual v3 CounterCue custom QR counter sign proof print on a counter">
+        <p>Actual v3 proof print. Customer orders are made to order with customer-provided QR destination, text, and color preferences.</p>
+      </article>
+      <article class="proof-card">
+        <img src="assets/v3/v3-edge-proof.jpg" alt="Edge view showing the thin v3 CounterCue proof print profile">
+        <p>Thin sign plate profile from the v3 proof print.</p>
+      </article>
     </section>
 
     <section class="grid" style="margin-top:14px;" aria-label="order details">

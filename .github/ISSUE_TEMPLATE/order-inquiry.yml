@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in CounterCue Signs. Do not include private addresses, payment card data, bank details, passwords, or tax IDs in this public inquiry.
+        Thanks for your interest in CounterCue Signs. Use this form for order details, customization requests, and pre-production revision notes. Do not include private addresses, payment card data, bank details, passwords, or tax IDs in this public inquiry.
   - type: input
     id: business_name
     attributes:
@@ -56,7 +56,7 @@ body:
     attributes:
       label: Fulfillment preference
       options:
-        - Chino/Inland Empire local pickup
+        - Local pickup within 5 miles of Chino CA
         - Shipping if practical
         - Either
     validations:
@@ -65,4 +65,4 @@ body:
     id: notes
     attributes:
       label: Notes
-      description: Add timing needs, booth/counter use case, or other public-safe details. Do not include private addresses or payment details.
+      description: Add timing needs, booth/counter use case, requested text/link/layout revisions, color customization notes, or other public-safe details. Do not include private addresses or payment details.

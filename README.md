@@ -1,2 +1,3 @@
 # countercue-signs
-CounterCue Signs custom QR counter display inquiry page
+
+CounterCue is closed and is not accepting orders, inquiries, revisions, local pickup requests, or shipping requests.
